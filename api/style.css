@@ -1,157 +1,69 @@
 *{
     margin: 0;  
-    padding: 0; 
+    padding: 2px; 
     font-size: 100%; 
     border: none; 
     outline: none; 
     font-weight: 300; 
     box-sizing: border-box; 
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Cairo', sans-serif;
     
 }
 body{
-    background-color: black;
+    background-image: url(fundo.jpg);
+    background-position: 50% 10%;
     color:black;
 }
-a {
-    text-decoration: none;
-    color: orange;
-}
-a.loginhome {
-    text-align: center;
-    position: relative;
-    left: 70px;
-    
-}
-a.loginhome:hover {
-    color: orange;
-}
-ul {
-    list-style: none;
-}
-img{
-    max-width: 100%;
-}
-/*Cabeçalho*/
-.cabecalho{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-}
-.logo {
-    width: 70px;
-    height: 70px;
-    float: left;
-    background: url(img/logo.png) center center/70px no-repeat;
-}
-.btn-menu {
-    width: 56px;
-    height: 56px;
-    float: right;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    border-radius: 56px;
-    background: linear-gradient(to right, #3595C7, #09405d);
-}
+
 h1 {
-    color: white;
-    font-size: 20pt;
+    color: #e61484;
+    font-size: 18pt;
     text-align: center;
 }
 h2 {
-    color: orange;
-    font-size: 16pt;
+    color: #ffffff;
+    font-size: 12pt;
     text-align: center;
+    font-style: italic;
 }
 h3 {
-    color: #099d6d;
-    font-size: 16pt;
+    color: #ffffff;
+    font-size: 9pt;
     text-align: center;
 }
-/*Menu*/
-.menu{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-.btn-close{
-    font-size: 3em;
-    color:#fff;
-    float:right;
-    cursor: pointer;
-    margin-right: 5%;
-}
-.menu ul {
-    width: 100%;
-    float: left;
+h4 {
+    color: #ffffff;
+    font-size: 9pt;
     text-align: center;
 }
-.menu li {
-    padding: 1.5%;
-}
-.menu li a {
-    font-size: 2em;
-    color: #fff;
-    padding: 1.5% 3%;
-}
-.menu li a:hover{
-    border: 1px solid #099e6e;
-}
-.footer{
-    color: white;
+p {
+    color: #e61484;
+    font-size: 6pt;
     text-align: center;
 }
-h1.img_up{
+input {
+    width: 50%;
+    text-align: center;
+    left: 30%;
+    position: relative;
+}
+td {
+    width: 150px;
+}
+div {
     color: white;
-    position: relative;
-    left: -70px;
-    font-size: 12pt;
+    width: max-content;
 }
-.text {
+img {
+    width: 135px;
+    height: 120px;
+    float: right;
+    margin-top: -45px;
+}
+button {
+    background: linear-gradient(to right, #e61484, #f660b0);
     color: white;
-} 
-img.face {
-    position: relative;
+    border-radius: 5px;
     width: 100px;
-    left: 350px;
+    height: 30px;
 }
-img.insta {
-    position: relative;
-    width: 100px;
-    left: 470px;
-}
-img.whats {
-    position: relative;
-    width: 100px;
-    left: 920px;
-}
-   
-    
-
-/*Tamanho para smarthphones*/
-
-@media only screen and (max-width: 480px){
-    img.face {
-        position: relative;
-        width: 60px;
-        left: 60px;
-    }
-    img.insta {
-        position: relative;
-        width: 60px;
-        left: 35px;
-    }
-    img.whats {
-    position: relative;
-    width: 60px;
-    left: 190px;
-    }
-    
-}
-    
