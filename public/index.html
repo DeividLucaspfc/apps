@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#e61484">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stile.css">
     <title>Personalizados</title>
 </head>
 <body>
@@ -32,7 +31,7 @@
             <td><div id="res2"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 1,50</p></td>
+            <td><p>R$ 2,00</p></td>
             <td><h3>Cone</h3></td>  
             <td><input type="number"  id="txt3"></td>
             <td><div id="res3"></div></td>
@@ -50,7 +49,7 @@
             <td><div id="res5"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 1,80</p></td>
+            <td><p>R$ 2,00</p></td>
             <td><h3>Pirâmide</h3></td>  
             <td><input type="number" id="txt6"></td>
             <td><div id="res6"></div></td>
@@ -75,7 +74,7 @@
         </tr>
         <tr>
             <td><p>R$ 2,00</p></td>
-            <td><h3>Caixa de pomada</h3></td>  
+            <td><h3>Latinha plática</h3></td>  
             <td><input type="number" id="txt10"></td>
             <td><div id="res10"></div></td>
         </tr>
@@ -110,8 +109,8 @@
             <td><div id="res15"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 3,00</p></td>
-            <td><h3>Sacolinha (cordão)</h3></td>  
+            <td><p>R$ 2,00</p></td>
+            <td><h3>Caixa maleta</h3></td>  
             <td><input type="number" id="txt16"></td>
             <td><div id="res16"></div></td>
         </tr>
@@ -128,6 +127,48 @@
             <td><div id="res18"></div></td>
         </tr>
         <tr>
+            <td><p>R$ 3,00</p></td>
+            <td><h3>Caixa de Acrílico</h3></td>  
+            <td><input type="number" id="txt19"></td>
+            <td><div id="res19"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 2,50</p></td>
+            <td><h3>Cofrinho</h3></td>  
+            <td><input type="number" id="txt20"></td>
+            <td><div id="res20"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 8,00</p></td>
+            <td><h3>Bandeirinha</h3></td>  
+            <td><input type="number" id="txt21"></td>
+            <td><div id="res21"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 5,00</p></td>
+            <td><h3>Painel</h3></td>  
+            <td><input type="number" id="txt22"></td>
+            <td><div id="res22"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 2,50</p></td>
+            <td><h3>Casinha</h3></td>  
+            <td><input type="number" id="txt23"></td>
+            <td><div id="res23"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 1,50</p></td>
+            <td><h3>Garrafinha</h3></td>  
+            <td><input type="number" id="txt24"></td>
+            <td><div id="res24"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 1,50</p></td>
+            <td><h3>Garrafinha</h3></td>  
+            <td><input type="number" id="txt25"></td>
+            <td><div id="res25"></div></td>
+        </tr>
+        <tr>
             <td><h4>TOTAL A PAGAR: </h4></td>
             <td><div id="total"></div></td>
         </tr>
@@ -135,11 +176,114 @@
     </table>
 
     </form>
-    <button id="btn" onclick="calcular()">Calcular</button>
+    <button id="calcular">Calcular</button><br><br><br>
     <img src="marca.png" alt="mi.mada">
     
     <script>
-       
+        let calcular = document.getElementById("calcular");
+
+        calcular.addEventListener("click", function(){
+
+            
+            var p1 = parseFloat(0.50); 
+            var p2 = parseFloat(1.50);
+            var p3 = parseFloat(1.80); 
+            var p4 = parseFloat(2);
+            var p5 = parseFloat(2.50);
+            var p6 = parseFloat(3);
+            var p7 = parseFloat(10);
+            var p8 = parseFloat(40);
+            var p9 = parseFloat(5);
+            var p10 = parseFloat(8);
+
+            var s1 = document.getElementById("txt1").value;
+            var s2 = document.getElementById("txt2").value;
+            var s3 = document.getElementById("txt3").value;
+            var s4 = document.getElementById("txt4").value;
+            var s5 = document.getElementById("txt5").value;
+            var s6 = document.getElementById("txt6").value;
+            var s7 = document.getElementById("txt7").value;
+            var s8 = document.getElementById("txt8").value;
+            var s9 = document.getElementById("txt9").value;
+            var s10 = document.getElementById("txt10").value;
+            var s11 = document.getElementById("txt11").value;
+            var s12 = document.getElementById("txt12").value;
+            var s13 = document.getElementById("txt13").value;
+            var s14 = document.getElementById("txt14").value;
+            var s15 = document.getElementById("txt15").value;
+            var s16 = document.getElementById("txt16").value;
+            var s17 = document.getElementById("txt17").value;
+            var s18 = document.getElementById("txt18").value;
+            var s19 = document.getElementById("txt19").value;
+            var s20 = document.getElementById("txt20").value;
+            var s21 = document.getElementById("txt21").value;
+            var s22 = document.getElementById("txt22").value;
+            var s23 = document.getElementById("txt23").value;
+            var s24 = document.getElementById("txt24").value;
+            var s25 = document.getElementById("txt25").value;
+
+            var r1 = parseFloat((p1*s1).toFixed(2));
+            var r2 = parseFloat((p1*s2).toFixed(2));
+            var r3 = parseFloat((p4*s3).toFixed(2));
+            var r4 = parseFloat((p2*s4).toFixed(2));
+            var r5 = parseFloat((p2*s5).toFixed(2));
+            var r6 = parseFloat((p4*s6).toFixed(2));
+            var r7 = parseFloat((p3*s7).toFixed(2));
+            var r8 = parseFloat((p3*s8).toFixed(2));
+            var r9 = parseFloat((p4*s9).toFixed(2));
+            var r10 = parseFloat((p4*s10).toFixed(2));
+            var r11 = parseFloat((p4*s11).toFixed(2));
+            var r12 = parseFloat((p4*s12).toFixed(2));
+            var r13 = parseFloat((p5*s13).toFixed(2));
+            var r14 = parseFloat((p5*s14).toFixed(2));
+            var r15 = parseFloat((p5*s15).toFixed(2));
+            var r16 = parseFloat((p4*s16).toFixed(2));
+            var r17 = parseFloat((p7*s17).toFixed(2));
+            var r18 = parseFloat((p8*s18).toFixed(3));
+            var r19 = parseFloat((p6*s19).toFixed(3));
+            var r20 = parseFloat((p5*s20).toFixed(3));
+            var r21 = parseFloat((p10*s21).toFixed(3));
+            var r22 = parseFloat((p9*s22).toFixed(3));
+            var r23 = parseFloat((p5*s23).toFixed(3));
+            var r24 = parseFloat((p2*s24).toFixed(3));
+            var r25 = parseFloat((p2*s25).toFixed(3));
+
+            
+            
+            document.getElementById('res1').innerText = "R$ " + r1;
+            document.getElementById('res2').innerText = "R$ " + r2;
+            document.getElementById('res3').innerText = "R$ " + r3;
+            document.getElementById('res4').innerText = "R$ " + r4;
+            document.getElementById('res5').innerText = "R$ " + r5;
+            document.getElementById('res6').innerText = "R$ " + r6;
+            document.getElementById('res7').innerText = "R$ " +  r7;
+            document.getElementById('res8').innerText = "R$ " + r8;
+            document.getElementById('res9').innerText = "R$ " + r9;
+            document.getElementById('res10').innerText = "R$ " + r10;
+            document.getElementById('res11').innerText = "R$ " + r11;
+            document.getElementById('res12').innerText = "R$ " + r12;
+            document.getElementById('res13').innerText = "R$ " + r13;
+            document.getElementById('res14').innerText = "R$ " + r14;
+            document.getElementById('res15').innerText = "R$ " + r15;
+            document.getElementById('res16').innerText = "R$ " + r16;
+            document.getElementById('res17').innerText = "R$ " + r17;
+            document.getElementById('res18').innerText = "R$ " + r18;
+            document.getElementById('res19').innerText = "R$ " + r19;
+            document.getElementById('res20').innerText = "R$ " + r20;
+            document.getElementById('res21').innerText = "R$ " + r21;
+            document.getElementById('res22').innerText = "R$ " + r22;
+            document.getElementById('res23').innerText = "R$ " + r23;
+            document.getElementById('res24').innerText = "R$ " + r24;
+            document.getElementById('res25').innerText = "R$ " + r25;
+            
+            var acrescimo = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25) * 0.05.toFixed(2);
+            var soma = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25) + acrescimo;
+            var boole = soma.toFixed(2);
+            var soma2 = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25).toFixed(2);
+            
+            document.getElementById('total').innerText = "No cartão à vista: R$ " + boole + "\n Pix ou espécie: R$ " + soma2;
+
+        });
     
     
     </script>
