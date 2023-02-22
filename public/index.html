@@ -214,7 +214,7 @@
             var s22 = document.getElementById("txt22").value;
             var s23 = document.getElementById("txt23").value;
             var s24 = document.getElementById("txt24").value;
-            var s25 = document.getElementById("txt25").value;
+            
 
             var r1 = parseFloat((p1*s1).toFixed(2));
             var r2 = parseFloat((p1*s2).toFixed(2));
@@ -240,7 +240,7 @@
             var r22 = parseFloat((p9*s22).toFixed(3));
             var r23 = parseFloat((p5*s23).toFixed(3));
             var r24 = parseFloat((p2*s24).toFixed(3));
-            var r25 = parseFloat((p2*s25).toFixed(3));
+            
 
             
             
@@ -268,12 +268,12 @@
             document.getElementById('res22').innerText = "R$ " + r22;
             document.getElementById('res23').innerText = "R$ " + r23;
             document.getElementById('res24').innerText = "R$ " + r24;
-            document.getElementById('res25').innerText = "R$ " + r25;
+           
             
-            var acrescimo = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25) * 0.05.toFixed(2);
-            var soma = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25) + acrescimo;
+            var acrescimo = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24) * 0.05.toFixed(2);
+            var soma = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24) + acrescimo;
             var boole = soma.toFixed(2);
-            var soma2 = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25).toFixed(2);
+            var soma2 = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24).toFixed(2);
             
             document.getElementById('total').innerText = "No cartão à vista: R$ " + boole + "\n Pix ou espécie: R$ " + soma2;
 
