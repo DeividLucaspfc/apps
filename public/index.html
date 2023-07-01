@@ -43,7 +43,7 @@
             <td><div id="res4"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 1,50</p></td>
+            <td><p>R$ 1,80</p></td>
             <td><h3>Mini-Pirâmide</h3></td>  
             <td><input type="number" id="txt5"></td>
             <td><div id="res5"></div></td>
@@ -67,14 +67,14 @@
             <td><div id="res8"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 2,00</p></td>
+            <td><p>R$ 2,50</p></td>
             <td><h3>Caixa Milk</h3></td>  
             <td><input type="number" id="txt9"></td>
             <td><div id="res9"></div></td>
         </tr>
         <tr>
             <td><p>R$ 2,00</p></td>
-            <td><h3>Latinha plática</h3></td>  
+            <td><h3>Latinha plástica</h3></td>  
             <td><input type="number" id="txt10"></td>
             <td><div id="res10"></div></td>
         </tr>
@@ -103,8 +103,8 @@
             <td><div id="res14"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 2,50</p></td>
-            <td><h3>Sacolinha (fita cetim)</h3></td>  
+            <td><p>R$ 3,00</p></td>
+            <td><h3>Sacolinha</h3></td>  
             <td><input type="number" id="txt15"></td>
             <td><div id="res15"></div></td>
         </tr>
@@ -127,7 +127,7 @@
             <td><div id="res18"></div></td>
         </tr>
         <tr>
-            <td><p>R$ 3,00</p></td>
+            <td><p>R$ 3,50</p></td>
             <td><h3>Caixa de Acrílico</h3></td>  
             <td><input type="number" id="txt19"></td>
             <td><div id="res19"></div></td>
@@ -152,7 +152,7 @@
         </tr>
         <tr>
             <td><p>R$ 2,50</p></td>
-            <td><h3>Casinha</h3></td>  
+            <td><h3>Casinha comum ou para tubete</h3></td>  
             <td><input type="number" id="txt23"></td>
             <td><div id="res23"></div></td>
         </tr>
@@ -161,6 +161,18 @@
             <td><h3>Garrafinha</h3></td>  
             <td><input type="number" id="txt24"></td>
             <td><div id="res24"></div></td>
+        </tr>
+        <tr>
+            <td><p>R$ 2,50</p></td>
+            <td><h3>Caixa Canudo</h3></td>  
+            <td><input type="number" id="txt25"></td>
+            <td><div id="res25"></div></td>
+        </tr>
+         <tr>
+            <td><p>R$ 6,00</p></td>
+            <td><h3>Livro Colorir</h3></td>  
+            <td><input type="number" id="txt26"></td>
+            <td><div id="res26"></div></td>
         </tr>
         <tr>
             <td><h4>TOTAL A PAGAR: </h4></td>
@@ -189,6 +201,8 @@
             var p8 = parseFloat(40);
             var p9 = parseFloat(5);
             var p10 = parseFloat(8);
+            var p11 = parseFloat(3.5);
+            var p12 = parseFloat(6);
 
             var s1 = document.getElementById("txt1").value;
             var s2 = document.getElementById("txt2").value;
@@ -214,32 +228,36 @@
             var s22 = document.getElementById("txt22").value;
             var s23 = document.getElementById("txt23").value;
             var s24 = document.getElementById("txt24").value;
+            var s25 = document.getElementById("txt25").value;
+            var s25 = document.getElementById("txt26").value;
             
 
             var r1 = parseFloat((p1*s1).toFixed(2));
             var r2 = parseFloat((p1*s2).toFixed(2));
             var r3 = parseFloat((p4*s3).toFixed(2));
             var r4 = parseFloat((p2*s4).toFixed(2));
-            var r5 = parseFloat((p2*s5).toFixed(2));
+            var r5 = parseFloat((p3*s5).toFixed(2));
             var r6 = parseFloat((p4*s6).toFixed(2));
             var r7 = parseFloat((p3*s7).toFixed(2));
             var r8 = parseFloat((p3*s8).toFixed(2));
-            var r9 = parseFloat((p4*s9).toFixed(2));
+            var r9 = parseFloat((p5*s9).toFixed(2));
             var r10 = parseFloat((p4*s10).toFixed(2));
             var r11 = parseFloat((p4*s11).toFixed(2));
             var r12 = parseFloat((p4*s12).toFixed(2));
             var r13 = parseFloat((p5*s13).toFixed(2));
             var r14 = parseFloat((p5*s14).toFixed(2));
-            var r15 = parseFloat((p5*s15).toFixed(2));
+            var r15 = parseFloat((p6*s15).toFixed(2));
             var r16 = parseFloat((p4*s16).toFixed(2));
             var r17 = parseFloat((p7*s17).toFixed(2));
             var r18 = parseFloat((p8*s18).toFixed(3));
-            var r19 = parseFloat((p6*s19).toFixed(3));
+            var r19 = parseFloat((p11*s19).toFixed(3));
             var r20 = parseFloat((p5*s20).toFixed(3));
             var r21 = parseFloat((p10*s21).toFixed(3));
             var r22 = parseFloat((p9*s22).toFixed(3));
             var r23 = parseFloat((p5*s23).toFixed(3));
             var r24 = parseFloat((p2*s24).toFixed(3));
+            var r25 = parseFloat((p5*s25).toFixed(3));
+            var r26 = parseFloat((p12*s26).toFixed(3));
             
 
             
@@ -268,12 +286,13 @@
             document.getElementById('res22').innerText = "R$ " + r22;
             document.getElementById('res23').innerText = "R$ " + r23;
             document.getElementById('res24').innerText = "R$ " + r24;
-           
+            document.getElementById('res25').innerText = "R$ " + r25;
+            document.getElementById('res26').innerText = "R$ " + r26;
             
-            var acrescimo = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24) * 0.05.toFixed(2);
-            var soma = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24) + acrescimo;
+            var acrescimo = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25+r26) * 0.05.toFixed(2);
+            var soma = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25+r26) + acrescimo;
             var boole = soma.toFixed(2);
-            var soma2 = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24).toFixed(2);
+            var soma2 = parseFloat(r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20+r21+r22+r23+r24+r25+r26).toFixed(2);
             
             document.getElementById('total').innerText = "No cartão à vista: R$ " + boole + "\n Pix ou espécie: R$ " + soma2;
 
